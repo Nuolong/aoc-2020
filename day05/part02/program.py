@@ -37,8 +37,8 @@ def main():
 
     idList = [findRC(id) for id in locList]
 
-    for i in range(max(idList)):
-        if i not in idList and i+1 in idList and i-1 in idList:
+    for i in range(min(idList), max(idList)):
+        if i not in idList:
             print(i)
 
 if __name__ == '__main__':
