@@ -9,7 +9,7 @@ eyeColors = ("amb", "blu", "brn", "gry", "grn", "hzl", "oth")
 def validate(dir):
     count = 0
     for entry in dir:
-        if len(entry.keys()) == 7 and 'cid' not in entry.keys():
+        if len(entry.keys()) == 7 and 'cid' not in entry:
             if validateXtra(entry):
                 count += 1
         elif len(entry.keys()) == 8:
