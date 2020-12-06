@@ -10,7 +10,6 @@ def main():
     for i in sys.stdin:
         if i == "\n":
             total += len(group)
-            print(group)
             group = set()
 
         for j in i.split():
