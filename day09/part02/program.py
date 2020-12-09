@@ -15,7 +15,7 @@ def find_ctg(window, invalid_num):
 
         # contiguous subarray found
         if curr_sum == invalid_num:
-            sub_arr = window[start:end]
+            sub_arr = window[start:end + 1]
             return max(sub_arr) + min(sub_arr)
         # new value added to end of window
         else:
