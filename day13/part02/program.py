@@ -13,7 +13,7 @@ def find_next_time(start, increment, bus, i):
 def main():
     input()
     busses = [int(x) if x != 'x' else 0 for x in input().split(",")]
-    time = busses[0]
+    time = busses[0]    # or whatever first non-zero is
     increment = time
 
     for i, bus in enumerate(busses):
