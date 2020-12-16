@@ -11,8 +11,6 @@ def remove_tickets(fields, ticket):
     return all(any((min_1 <= val <= max_1 or min_2 <= val <= max_2) for min_1, max_1, min_2, max_2 in fields.values()) for val in ticket)
 
 def find_meaning(fields, tickets, omit):
-    meaning = []
-
     for i in range(20):
         all_fields = list(fields.keys())
         for field in omit:
