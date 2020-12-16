@@ -3,7 +3,6 @@
 import sys
 import re
 from collections import defaultdict
-import math
 
 FIELD = r'^(.*): (\d+)-(\d+) or (\d+)-(\d+)$'
 meaning_dict = defaultdict(str)
